@@ -1,4 +1,43 @@
-<html>
+<!DOCTYPE html>
+<html lang="fr">
+   <head>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+      <style>
+         table, td, th {border: 1px solid}
+     </style>
+   </head>
    <nav><a href="textlistforms.html">Textes&Listes&Formulaires</a>|<a href="tables.html">Tableaux</a>|<a href="medias.html">Médias</a></nav>
+   <hr>
+   <ol>
+       <li><a href="#images">Images</a></li>
+       <li><a href="#video1">Vidéo 1</a></li>
+       <li><a href="#video2">Vidéo 2</a></li>
+       <li><a href="#audio">Audio</a></li>
+       <li><a href="#iframe">Iframe</Iframe></a></li>
+   </ol>
+   <hr>
+   <h1>Manipulation des médias en HTML</h1>
+   <h2 id="images">Images<i class="material-icons">insert_photo</i></h2>
+   <table>
+      <tr><td rowspan="2">	<img src="images\nantes.jpg" alt="" height = " 100px " width = " 200px "> </td>
+      <td colspan="2"><svg width="200" height="200" ><a xlink:href="https://isen-nantes.fr/" target="_blank"><rect x="50" y="50"width="80" height="80" style="fill:rgb(0,200,0);stroke:rgb(0,0,0)" /></a></svg></td><td><img src="images\nantes.jpg" alt="" height = " 100px " width = " 200px "></td></tr>
+      <tr><td colspan="2"><svg width="200" height="80"><text x="10" y="15" fill="red" transform="rotate(30)" >non disponible</text></svg></td>
+      <td><img src="images\nantes.jpg" alt="" height = " 80px " width = " 200px "></td></tr>   
+   </table>
+   <h2 id="video1">Vidéo avec la balise&lt;iframe &gt;<i class="material-icons">movie</i></h2>
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/7gwK1dcz0IU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      
+   <h2 id="video2">Vidéo avec la balise&lt;video &gt;<i class="material-icons">movie</i></h2>
+   <video width="320" height="240" controls>
+      <source src="vidéos/windtunnel.mp4" type="video/mp4">
+      </video>
+      
+   <h2 id="audio">Audio<i class="material-icons">audiotrack</i></h2>
+   <audio controls>
+      <source src="audios/audio.mp3.m4a" type="audio/mp3">
+      </audio>
+      
+   <h2 id="iframe">Iframe<i class="material-icons">insert_link</i><a target="mon_ifram" href="https://isen-nantes.fr/" onclick="document.getElementById('mon_ifram').style.visibility=visible">Cliquer ici !</a></h2>
+   <iframe id="mon_ifram" name="mon_ifram" aligne="center" width="560" height="315"  style="visibility:none"></iframe>
 
-</html>
+</html> 
